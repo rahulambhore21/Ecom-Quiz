@@ -61,6 +61,7 @@ const questions = [
   const questionElement = document.getElementById("question");
   const optionBtn = document.getElementById("optionBtn");
   const nextBtn = document.getElementById("next-btn");
+  const title = document.getElementById("title");
   
   let score = 0;
   let currentQuestionIndex = 0;
@@ -111,6 +112,8 @@ const questions = [
       if (isCorrect) {
         buttonSelected.classList.add("correct");
         score++;
+        title.innerHTML = "You Get It correct";
+        title.classList.add("correct");
       }
       else{
         buttonSelected.classList.add("incorrect");
