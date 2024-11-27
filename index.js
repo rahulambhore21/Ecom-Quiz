@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "Iconography is the use of text and images to convey specific messages.",
+    question: "Iconography is the use of text to convey specific messages.",
     options: [
       { text: "A. False", correct: true },
       { text: "B. True", correct: false }
@@ -112,7 +112,6 @@ const questions = [
       if (isCorrect) {
         buttonSelected.classList.add("correct");
         score++;
-        title.innerHTML = "You Get It correct";
         title.classList.add("correct");
       }
       else{
