@@ -112,7 +112,7 @@ const questions = [
       if (isCorrect) {
         buttonSelected.classList.add("correct");
         score++;
-        title.classList.add("correct");
+        // title.classList.add("correct");
       }
       else{
         buttonSelected.classList.add("incorrect");
